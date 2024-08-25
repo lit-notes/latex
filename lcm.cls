@@ -35,10 +35,18 @@ showspaces=true
     \end{figure}
 }
 
+\RequirePackage{xcolor}
+
+\lstset{
+  language=bash,
+  backgroundcolor = \color{lightgray},
+  showspaces=false,
+  showstringspaces=false,
+  breaklines=true,
+  frame=single
+}
+
 \newcommand{\shCode}[1]{
-    %\begin{lstlisting}[language=bash]
-    %#1
-    %\end{lstlisting}
     \lstinline[language=bash]|#1|
 }
 
