@@ -6,11 +6,7 @@
 \RequirePackage{graphicx}
 
 \RequirePackage{listings}
-\PassOptionsToPackage{
-language=bash,
-showspaces=true
-}{listings}
-\RequirePackage{listings}
+
 
 \renewcommand{\maketitle}{
     \twocolumn[
