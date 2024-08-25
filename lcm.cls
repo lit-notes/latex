@@ -1,0 +1,56 @@
+
+\ProvidesClass{lcm}[2024/08/23 LCM LaTeX class]
+
+\LoadClass{ctexart}
+
+\RequirePackage{graphicx}
+
+\RequirePackage{listings}
+\PassOptionsToPackage{
+language=bash,
+showspaces=true
+}{listings}
+\RequirePackage{listings}
+
+\renewcommand{\maketitle}{
+    \twocolumn[
+        \fontsize{50}{60}\fontfamily{phv}\fontseries{b}%
+        \fontshape{sl}\selectfont\headlinecolor
+        \@title
+        \medskip
+    ]
+}
+
+
+\graphicspath{
+    {img/}
+    {../img/}
+}
+
+\newcommand{\img}[1]{
+    \begin{figure}[h] % must add `h` to insert here
+    \centering
+    \includegraphics[width=\textwidth]{#1}
+    \caption{#1}
+    \end{figure}
+}
+
+\newcommand{\shCode}[1]{
+    %\begin{lstlisting}[language=bash]
+    %#1
+    %\end{lstlisting}
+    \lstinline[language=bash]|#1|
+}
+
+\newcommand{\ans}[1]{
+  \marginpar{\textbf{ans:} #1}
+}
+
+\newcommand{\showSh}[1]{
+    %\verb|#1.sh|
+    \lstinputlisting[language=bash]{../../step/#1.sh}
+}
+
+\newcommand*\h{\section}
+\newcommand*\hh{\subsection}
+\newcommand*\hhh{\subsubsection}
