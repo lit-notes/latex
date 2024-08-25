@@ -46,9 +46,10 @@ showspaces=true
   \marginpar{\textbf{ans:} #1}
 }
 
+\renewcommand\lstlistingname{Step-Code}
+
 \newcommand{\showSh}[1]{
-    %\verb|#1.sh|
-    \lstinputlisting[language=bash]{../../step/#1.sh}
+    \lstinputlisting[language=bash, caption={\lstname}]{../../step/#1.sh}
 }
 
 \newcommand*\h{\section}
