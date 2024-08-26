@@ -5,6 +5,8 @@
 
 \RequirePackage{graphicx}
 
+\RequirePackage{hyperref}
+
 \RequirePackage{listings}
 
 
