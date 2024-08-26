@@ -10,14 +10,6 @@
 \RequirePackage{listings}
 
 
-\renewcommand{\maketitle}{
-    \twocolumn[
-        \fontsize{50}{60}\fontfamily{phv}\fontseries{b}%
-        \fontshape{sl}\selectfont\headlinecolor
-        \@title
-        \medskip
-    ]
-}
 
 
 \graphicspath{
